@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9ccf0306-9577-40dd-aa9d-cc3cfc8fc3c6": {
+      "ProjectGuid": "9ccf0306-9577-40dd-aa9d-cc3cfc8fc3c6",
+      "DisplayName": "BlocNotas",
+      "ColorIndex": 0
+    },
+    "ecdc7bf7-a488-4083-95f3-ac29558113cb": {
+      "ProjectGuid": "ecdc7bf7-a488-4083-95f3-ac29558113cb",
+      "DisplayName": "Domain",
+      "ColorIndex": 1
+    },
+    "0fadc1d9-7ad1-4c51-9d76-45366e604e3e": {
+      "ProjectGuid": "0fadc1d9-7ad1-4c51-9d76-45366e604e3e",
+      "DisplayName": "Infraestructure",
+      "ColorIndex": 2
+    },
+    "6cf369f0-2807-49b9-b6e1-b2260d2813d4": {
+      "ProjectGuid": "6cf369f0-2807-49b9-b6e1-b2260d2813d4",
+      "DisplayName": "AppCore",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
