@@ -1,0 +1,11 @@
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\BlocNotas.exe.config
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\BlocNotas.exe
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\BlocNotas.pdb
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.SuggestedBindingRedirects.cache
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.Formularios.FrmMenu.resources
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.Properties.Resources.resources
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.exe
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.pdb
