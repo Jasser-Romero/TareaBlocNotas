@@ -17,7 +17,7 @@ namespace Infraestructure.Repositories
             throw new NotImplementedException();
         }
 
-        public void Read(string path)
+        public string Read(string path)
         {
             throw new NotImplementedException();
         }

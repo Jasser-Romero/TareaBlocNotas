@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppCore.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,8 +15,10 @@ namespace BlocNotas.Formularios
     public partial class FrmMenu : Form
     {
         string winDir = System.Environment.GetEnvironmentVariable("windir");
-        public FrmMenu()
+        INotasServices notasServices;
+        public FrmMenu(INotasServices notasServices)
         {
+            this.notasServices = notasServices;
             InitializeComponent();
         }
 

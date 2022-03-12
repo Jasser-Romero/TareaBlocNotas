@@ -1,4 +1,9 @@
-﻿using BlocNotas.Formularios;
+﻿using AppCore.Interfaces;
+using AppCore.Services;
+using Autofac;
+using BlocNotas.Formularios;
+using Domain.Interfaces;
+using Infraestructure.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +20,19 @@ namespace BlocNotas
         [STAThread]
         static void Main()
         {
+            
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMenu());
+
+            var builder = new ContainerBuilder();
+
+            builder.RegisterType<StreamNotasRepository>().As<INotasRepository>();
+            builder.RegisterType<NotaServices>().As<INotasServices>();
+
+            var container = builder.Build();
+
+            Application.Run(new FrmMenu(container.Resolve<INotasServices>()));
         }
     }
 }

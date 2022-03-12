@@ -7,7 +7,7 @@ namespace Domain.Interfaces
     public interface IRepository<T>
     {
         void Create(string message, string path);
-        void Read(string path);
+        string Read(string path);
         void Delete(string path);
     }
 }
