@@ -34,6 +34,8 @@ namespace BlocNotas.Formularios
 
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Agregar FileSystemWatcher
+            FrmMenu_Load(sender, e);
             string rutaArchivo = string.Empty;
             string filePath = string.Empty;
 
@@ -51,6 +53,8 @@ namespace BlocNotas.Formularios
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Agregar FileSystemWatcher
+            FrmMenu_Load(sender, e);
             string rutaArchivo = string.Empty;
             string filePath = string.Empty;
 
@@ -68,6 +72,16 @@ namespace BlocNotas.Formularios
         private void FrmMenu_Load(object sender, EventArgs e)
         {
             treeView1.Nodes.Clear();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Quiere salir?", "Salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+
         }
     }
 }

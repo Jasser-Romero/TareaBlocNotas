@@ -6,5 +6,6 @@ namespace Infraestructure.Repositories
 {
     public abstract class BaseRepository<T>
     {
+
     }
 }
