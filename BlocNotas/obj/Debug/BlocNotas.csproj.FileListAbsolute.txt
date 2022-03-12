@@ -9,3 +9,38 @@ C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.Gene
 C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.CoreCompileInputs.cache
 C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.exe
 C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.pdb
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\BlocNotas.exe.config
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\BlocNotas.exe
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\BlocNotas.pdb
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\AppCore.dll
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\Autofac.dll
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\Domain.dll
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\Infraestructure.dll
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\System.Buffers.dll
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\System.Memory.dll
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\AppCore.pdb
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\Domain.pdb
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\Infraestructure.pdb
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\Autofac.pdb
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\Autofac.xml
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\System.Buffers.xml
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\System.Memory.xml
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.AssemblyReference.cache
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.SuggestedBindingRedirects.cache
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\obj\Debug\BlocNotas.Formularios.FrmMenu.resources
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\obj\Debug\BlocNotas.Properties.Resources.resources
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.GenerateResource.cache
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.CoreCompileInputs.cache
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.CopyComplete
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\obj\Debug\BlocNotas.exe
+C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\obj\Debug\BlocNotas.pdb

@@ -22,6 +22,27 @@ namespace BlocNotas.Formularios
             InitializeComponent();
         }
 
+        private void NuevoArchivos() {
+
+            try{
+
+                if (!string.IsNullOrEmpty(this.richTextBox1.Text))
+                {
+                    MessageBox.Show("Necesitas guardar primero","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                }
+                else
+                {
+                    this.richTextBox1.Text = string.Empty;
+                    this.Text = "Sin titulo";
+                }
+            
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
         private void LoadFolder(TreeNodeCollection nodes, DirectoryInfo folder)
         {
             var newNode = nodes.Add(folder.Name);
@@ -43,6 +64,8 @@ namespace BlocNotas.Formularios
             string filePath = string.Empty;
 
             OpenFileDialog openFileDialog = new OpenFileDialog();
+
+          
             
             if(openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -61,6 +84,11 @@ namespace BlocNotas.Formularios
             string rutaArchivo = string.Empty;
             string filePath = string.Empty;
 
+            if (string.IsNullOrEmpty(richTextBox1.Text))
+            {
+                return;
+            }
+
             SaveFileDialog saveFileDialog = new SaveFileDialog();
 
             if(saveFileDialog.ShowDialog() == DialogResult.OK)
@@ -69,7 +97,7 @@ namespace BlocNotas.Formularios
                 filePath = Path.GetDirectoryName(rutaArchivo);
                 LoadFolder(treeView1.Nodes, new DirectoryInfo(@filePath));
             }
-            
+          
         }
 
         private void FrmMenu_Load(object sender, EventArgs e)
@@ -85,6 +113,16 @@ namespace BlocNotas.Formularios
                 Application.Exit();
             }
 
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NuevoArchivos();
         }
     }
 }
