@@ -9,20 +9,24 @@ namespace AppCore.Services
     public class NotaServices : INotasServices
     {
         INotasRepository repository;
+        public NotaServices(INotasRepository model)
+        {
+            this.repository = model;
+        }
 
         public void Create(string message, string path)
         {
-            throw new NotImplementedException();
+            repository.Create(message, path);
         }
 
         public void Delete(string path)
         {
-            throw new NotImplementedException();
+            repository.Delete(path);
         }
 
         public string Read(string path)
         {
-            return path;
+            return repository.Read(path);
         }
 
         

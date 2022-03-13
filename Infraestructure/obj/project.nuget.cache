@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "4s0Gs3U0tNKxfzUNG/RDTaZlxofLWzt/lJolyzEQ9we3dgEB2smtg/0Ym4cCDk7M8ydGITAuGQbRXMmr7vZulA==",
+  "dgSpecHash": "TGEX95BhK05w3s0BF7Dw1KCksP318cUlaHCLcR68CeTztQnPv9Y+zvZJxODBCfAcOOqIrOWtGgNOi2bqc7HtMQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Heyner Mendez\\Source\\Repos\\TareaBlocNotas\\Infraestructure\\Infraestructure.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\source\\repos\\BlocNotas\\Infraestructure\\Infraestructure.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Heyner Mendez\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Heyner Mendez\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -44,3 +44,27 @@ C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\obj\Debug\BlocNotas
 C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.CopyComplete
 C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\obj\Debug\BlocNotas.exe
 C:\Users\Heyner Mendez\Source\Repos\TareaBlocNotas\BlocNotas\obj\Debug\BlocNotas.pdb
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\AppCore.dll
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\Autofac.dll
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\Domain.dll
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\Infraestructure.dll
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\System.Buffers.dll
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\System.Memory.dll
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\AppCore.pdb
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\Domain.pdb
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\Infraestructure.pdb
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\Autofac.pdb
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\Autofac.xml
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\System.Buffers.xml
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\System.Memory.xml
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\LENOVO\source\repos\BlocNotas\BlocNotas\obj\Debug\BlocNotas.csproj.CopyComplete

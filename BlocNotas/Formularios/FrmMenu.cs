@@ -14,8 +14,11 @@ namespace BlocNotas.Formularios
 {
     public partial class FrmMenu : Form
     {
+        
         string winDir = System.Environment.GetEnvironmentVariable("windir");
         INotasServices notasServices;
+        int x = 217, cont = 0;
+        List<string> list = new List<string>();
         public FrmMenu(INotasServices notasServices)
         {
             this.notasServices = notasServices;
@@ -26,9 +29,10 @@ namespace BlocNotas.Formularios
 
             try{
 
-                if (!string.IsNullOrEmpty(this.richTextBox1.Text))
+                if (string.IsNullOrEmpty(this.richTextBox1.Text))
                 {
                     MessageBox.Show("Necesitas guardar primero","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    return;
                 }
                 else
                 {
@@ -64,14 +68,14 @@ namespace BlocNotas.Formularios
             string filePath = string.Empty;
 
             OpenFileDialog openFileDialog = new OpenFileDialog();
-
-          
             
             if(openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 rutaArchivo=openFileDialog.FileName;
                 filePath = Path.GetDirectoryName(rutaArchivo);
                 LoadFolder(treeView1.Nodes, new DirectoryInfo(@filePath));
+                richTextBox1.Text = notasServices.Read(@rutaArchivo);
+
             }
 
             
@@ -86,6 +90,7 @@ namespace BlocNotas.Formularios
 
             if (string.IsNullOrEmpty(richTextBox1.Text))
             {
+                MessageBox.Show("Agrega algo","Error",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
                 return;
             }
 
@@ -96,13 +101,18 @@ namespace BlocNotas.Formularios
                 rutaArchivo = saveFileDialog.FileName;
                 filePath = Path.GetDirectoryName(rutaArchivo);
                 LoadFolder(treeView1.Nodes, new DirectoryInfo(@filePath));
+                notasServices.Create(richTextBox1.Text, rutaArchivo);
             }
-          
+           
         }
 
         private void FrmMenu_Load(object sender, EventArgs e)
         {
             treeView1.Nodes.Clear();
+            if(cont != 0)
+            {
+                list.Add(richTextBox1.Text);
+            }
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -122,7 +132,26 @@ namespace BlocNotas.Formularios
 
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            NuevoArchivos();
+            
+            //Crear instancia
+            Button temp = new Button();
+
+            //Propiedades
+            temp.Height = 23;
+            temp.Width = 75;
+            temp.Location = new Point(x, 5);
+            x += 80;
+            temp.Name = "btnBoton" + cont.ToString();
+            temp.Text = "Ventana # "+ cont.ToString();
+            
+            cont++;
+
+            //Adicionamos el boton al form
+            Controls.Add(temp);
+            
+            //NuevoArchivos();
         }
+
+        
     }
 }

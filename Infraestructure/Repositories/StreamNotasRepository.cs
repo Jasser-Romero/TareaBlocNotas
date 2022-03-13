@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 
 namespace Infraestructure.Repositories
 {
@@ -9,7 +10,11 @@ namespace Infraestructure.Repositories
     {
         public void Create(string message, string path)
         {
-            throw new NotImplementedException();
+            using (StreamWriter sw = new StreamWriter(@path))
+            {
+                sw.WriteLine(message);
+            }
+            
         }
 
         public void Delete(string path)
@@ -19,7 +24,18 @@ namespace Infraestructure.Repositories
 
         public string Read(string path)
         {
-            throw new NotImplementedException();
+            string linea;
+            string mensaje = string.Empty;
+            StringBuilder sb = new StringBuilder();
+            using (StreamReader sr = new StreamReader(@path))
+            {
+                while ((linea = sr.ReadLine()) != null) 
+                {
+                    sb.Append(linea + "\n");
+                }
+            }
+            return sb.ToString();
+            
         }
     }
 }
