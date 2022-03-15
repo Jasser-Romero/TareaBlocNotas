@@ -10,10 +10,17 @@ namespace Infraestructure.Repositories
     {
         public void Create(string message, string path)
         {
-            using (StreamWriter sw = new StreamWriter(@path))
+            try
             {
-                sw.WriteLine(message);
+                using (StreamWriter sw = new StreamWriter(@path))
+                {
+                    sw.WriteLine(message);
+                }
+            } catch(IOException ex)
+            {
+                throw ex;
             }
+            
             
         }
 
@@ -25,16 +32,23 @@ namespace Infraestructure.Repositories
         public string Read(string path)
         {
             string linea;
-            string mensaje = string.Empty;
             StringBuilder sb = new StringBuilder();
-            using (StreamReader sr = new StreamReader(@path))
+            try
             {
-                while ((linea = sr.ReadLine()) != null) 
+                using (StreamReader sr = new StreamReader(@path))
                 {
-                    sb.Append(linea + "\n");
+                    while ((linea = sr.ReadLine()) != null)
+                    {
+                        sb.Append(linea + "\n");
+                    }
                 }
+                return sb.ToString();
             }
-            return sb.ToString();
+            catch (IOException ex)
+            {
+                throw ex;
+            }
+            
             
         }
     }

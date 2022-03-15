@@ -14,11 +14,8 @@ namespace BlocNotas.Formularios
 {
     public partial class FrmMenu : Form
     {
-        
-        string winDir = System.Environment.GetEnvironmentVariable("windir");
         INotasServices notasServices;
-        int x = 217, cont = 0;
-        List<string> list = new List<string>();
+        string rutaTreeView;
         public FrmMenu(INotasServices notasServices)
         {
             this.notasServices = notasServices;
@@ -43,7 +40,7 @@ namespace BlocNotas.Formularios
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show($"{ex}");
             }
         }
 
@@ -58,66 +55,71 @@ namespace BlocNotas.Formularios
             {
                 newNode.Nodes.Add(file.Name);
             }
+            treeView1.ImageList = imageList1;
+            treeView1.ImageIndex = 1;
+            treeView1.Nodes[0].ImageIndex = 0;
+            treeView1.SelectedImageIndex = 1;
+            
+            
         }
 
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Agregar FileSystemWatcher
             FrmMenu_Load(sender, e);
+
             string rutaArchivo = string.Empty;
             string filePath = string.Empty;
 
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            
-            if(openFileDialog.ShowDialog() == DialogResult.OK)
+            openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 rutaArchivo=openFileDialog.FileName;
+                rutaTreeView = Path.GetDirectoryName(@rutaArchivo);
                 filePath = Path.GetDirectoryName(rutaArchivo);
+                
                 LoadFolder(treeView1.Nodes, new DirectoryInfo(@filePath));
                 richTextBox1.Text = notasServices.Read(@rutaArchivo);
 
             }
-
             
+
         }
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Agregar FileSystemWatcher
             FrmMenu_Load(sender, e);
+
             string rutaArchivo = string.Empty;
             string filePath = string.Empty;
 
-            if (string.IsNullOrEmpty(richTextBox1.Text))
-            {
-                MessageBox.Show("Agrega algo","Error",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
-                return;
-            }
-
             SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
 
             if(saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 rutaArchivo = saveFileDialog.FileName;
+                rutaTreeView = Path.GetDirectoryName(@rutaArchivo);
                 filePath = Path.GetDirectoryName(rutaArchivo);
-                LoadFolder(treeView1.Nodes, new DirectoryInfo(@filePath));
                 notasServices.Create(richTextBox1.Text, rutaArchivo);
+                LoadFolder(treeView1.Nodes, new DirectoryInfo(@filePath));
+                
+               
             }
-           
+            
+
         }
 
         private void FrmMenu_Load(object sender, EventArgs e)
         {
             treeView1.Nodes.Clear();
-            if(cont != 0)
-            {
-                list.Add(richTextBox1.Text);
-            }
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Quiere salir?", "Salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Seguro que quiere salir?", "Salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if(result == DialogResult.Yes)
             {
                 Application.Exit();
@@ -130,26 +132,16 @@ namespace BlocNotas.Formularios
 
         }
 
+        private void treeView1_DoubleClick(object sender, EventArgs e)
+        {
+            string rutaAbsoluta = string.Empty;
+            rutaAbsoluta = rutaTreeView + "\\"+treeView1.SelectedNode.Text;
+            richTextBox1.Text = notasServices.Read(@rutaAbsoluta);
+        }
+
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
-            //Crear instancia
-            Button temp = new Button();
-
-            //Propiedades
-            temp.Height = 23;
-            temp.Width = 75;
-            temp.Location = new Point(x, 5);
-            x += 80;
-            temp.Name = "btnBoton" + cont.ToString();
-            temp.Text = "Ventana # "+ cont.ToString();
-            
-            cont++;
-
-            //Adicionamos el boton al form
-            Controls.Add(temp);
-            
-            //NuevoArchivos();
+            richTextBox1.Clear();
         }
 
         
